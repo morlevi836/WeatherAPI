@@ -2,8 +2,14 @@ const divOptions = document.querySelector(".divOptions");
 const inputText = document.querySelector(".inputText");
 const form = document.querySelector(".form");
 const main = document.querySelector(".main");
-const apiKey = "fb4b51f7b1cc4138b1b101226230612";
+const apiKey = prompt("Please enter your Api key:");
 let temp = "c";
+
+console.log(apiKey);
+
+if (apiKey === "" || apiKey === null) {
+  alert("Api Key is required! refresh and give apiKey");
+}
 
 async function fetchApiSearch() {
   const area = inputText.value;
