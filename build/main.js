@@ -5,8 +5,6 @@ const main = document.querySelector(".main");
 const apiKey = prompt("Please enter your Api key:");
 let temp = "c";
 
-console.log(apiKey);
-
 if (apiKey === "" || apiKey === null) {
   alert("Api Key is required! refresh and give apiKey");
 }
